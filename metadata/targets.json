@@ -1,0 +1,84 @@
+{
+ "signatures": [
+  {
+   "keyid": "ba65808977548012b65ab8229f7b939e2339703cec3686ef816f2480274e7f9b",
+   "sig": "6fed673251aeff7e0216dc39c5fbceeab6cb7c33823132069db9194b44f98b31c62f0367684477e36effc3e959d49623a49e3bbe447ec050d1a7be0674640d320759293c7d651cc7e32a384231f617bcea9c741294da29c21b15fcf5ff32d81348f9112d398963b3fd5cd37c370f66ad4b5243f2dfaa061f649e6e9c7c218a912cc8a81926bc18b70dc3d6fe1e4658a3bb9a2fc1c2a4adcc3e11d2f2b51b5880b6705efecd4a8cccc890ad075108e843c961d380966e8d404f75f7637db33a05a7259167748a7f50606a951520a9523b5549aba55e03e79fc5dc930797fcafb56e8b1dbab70e86341b737edff6dfb896b38550c61fd9f5b0e8e8f957172d8854"
+  }
+ ],
+ "signed": {
+  "_type": "targets",
+  "delegations": {
+   "keys": {
+    "ba65808977548012b65ab8229f7b939e2339703cec3686ef816f2480274e7f9b": {
+     "keyid_hash_algorithms": [
+      "sha256",
+      "sha512"
+     ],
+     "keytype": "rsa",
+     "keyval": {
+      "public": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtdvJF1Q7fRNTQfgGMH/W\n2Sb4O/PemLHKcBj6Q1Nadvii+lF+lfsD/VqzEuNaM2fpJpostWzJR1jdeyjRZS9G\ndToEA9iSD0MczHRLWa9a1NMcPBC/Edts1oXogk23+NSL/Ugc5H+WikDuwMMYhA3o\nNgVgAtfDfJQJFkbI033DwcYjbBmlt/gnTVNUSHuoG8M2EurchMnZZIqSawEaL82Q\nIFUhEuGSljcb/WRj6XHY7upCvjJOMN2kH/zz4kGR8j5t61TKiLiepjunuQMGg+fl\njEm4v0fandpwWLdx7kYSbftmbQjnuPhBd3g3BQ721O4dYkLA/ncca9XryLqN8Cac\ngQIDAQAB\n-----END PUBLIC KEY-----"
+     },
+     "scheme": "rsa-pkcs1v15-sha256"
+    }
+   },
+   "roles": [
+    {
+     "keyids": [
+      "ba65808977548012b65ab8229f7b939e2339703cec3686ef816f2480274e7f9b"
+     ],
+     "name": "law",
+     "paths": [
+      "sanipueblo/law-xml",
+      "sanipueblo/law-html",
+      "sanipueblo/law-xml-codified",
+      "capstone",
+      "branch"
+     ],
+     "terminating": true,
+     "threshold": 1
+    },
+    {
+     "keyids": [
+      "ba65808977548012b65ab8229f7b939e2339703cec3686ef816f2480274e7f9b"
+     ],
+     "name": "docs",
+     "paths": [
+      "sanipueblo/law-docs"
+     ],
+     "terminating": true,
+     "threshold": 1
+    },
+    {
+     "keyids": [
+      "ba65808977548012b65ab8229f7b939e2339703cec3686ef816f2480274e7f9b"
+     ],
+     "name": "assets",
+     "paths": [
+      "sanipueblo/law-static-assets"
+     ],
+     "terminating": true,
+     "threshold": 1
+    }
+   ]
+  },
+  "expires": "2020-06-27T00:21:02Z",
+  "spec_version": "1.0",
+  "targets": {
+   "repositories.json": {
+    "hashes": {
+     "sha256": "e76c8cc6eb65ec68ff2b9da2a14bfa4fc39d487993d11a4b034e0e5461264a46",
+     "sha512": "e4776f03e48069748de6233d01f586fcbe2747482b7547faf44bb24ae25f50150ca973cf546a1b13d18fda948eea9f89bb60a8a9b465a71ce1fbe732c1fb34d6"
+    },
+    "length": 1951
+   },
+   "test-auth-repo": {
+    "hashes": {
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "sha512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e"
+    },
+    "length": 0
+   }
+  },
+  "version": 1
+ }
+}
