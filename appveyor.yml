@@ -56,7 +56,7 @@ before_build:
   - git clone git@github.com:oll-test-repos/sanipueblo-law-html.git ..\sanipueblo\law-html
   - git clone  git@github.com:oll-test-repos/sanipueblo-law-xml-codified.git ..\sanipueblo\law-xml-codified
 
-  - git -C ..\sanipueblo-law remote set-url origin git@github.com:oll-test-repos/sanipueblo-law.git
+  - git -C ..\%APPVEYOR_PROJECT_SLUG% remote set-url origin git@github.com:oll-test-repos/sanipueblo-law.git
 
   - "%PYTHON%\\python.exe -m pip -q install wheel"
   - "%PYTHON%\\python.exe -m pip -q install -r requirements.txt"
@@ -70,11 +70,18 @@ build_script:
   - ps: $env:FLAG = if ($env:APPVEYOR_PULL_REQUEST_NUMBER -eq $null) { "--deploy" }
 
   # merge commits of update or speculative branches
-  - "%PYTHON%\\python.exe  -m oll.tools.cli ci merge_commits --library-root .. --auth ../sanipueblo-law %FLAG%"
+  - "%PYTHON%\\python.exe  -m oll.tools.cli ci merge_commits --library-root .. --auth ../%APPVEYOR_PROJECT_SLUG% %FLAG%"
 
   # update timestamp and/or snapshot metadata files if about to expire
   # if previous command merges something to master, this command won't update anything
-  - "%PYTHON%\\python.exe -m oll.tools.cli ci update_timestamp_and_snapshot --auth ../sanipueblo-law --expires-in-next-hours %SCHEDULED_BUILD_INTERVAL% %FLAG%"
+  - "%PYTHON%\\python.exe -m oll.tools.cli ci update_timestamp_and_snapshot --auth ../%APPVEYOR_PROJECT_SLUG% --expires-in-next-hours %SCHEDULED_BUILD_INTERVAL% %FLAG%"
+  
+notifications:
+  - provider: Slack
+    incoming_webhook:
+      # post to the fire channel
+      secure: KUaR+KAqX1jU0LF7kRDKHHGEAoItFzIHSjcreyRvnrT1vcX5+4iV77Ivysxl8jhh8ocUE0JCcmcKI0xPTb+M+EMfb8xk9L7+XCTdNubjU5w=
+    on_build_success: false
 
 test_script:
 - echo Skipping doomed test discovery to save time
