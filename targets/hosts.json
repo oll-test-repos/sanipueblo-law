@@ -1,0 +1,7 @@
+{
+    "san-ildefonso.nsn.us.open.law.vagrant": {
+        "auth_repos": {
+            "sanipueblo/law": {}
+        }
+	}
+}
