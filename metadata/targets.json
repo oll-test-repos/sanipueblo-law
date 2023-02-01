@@ -2,7 +2,7 @@
  "signatures": [
   {
    "keyid": "ba65808977548012b65ab8229f7b939e2339703cec3686ef816f2480274e7f9b",
-   "sig": "9c44af3081dc5ff0a46b622b8b6c9c668db3aef0cf9c997e4935c629c1b8f548dfe6ee109c5cc6de725c1698e0898d5dc4f50d2bc71e73030c3d4ca5acdd970f3e2f84833e3e8ef5ec9b86d5843a31c427aabf03ffc0901f1fe5ececc569b3f2b1ca395b91c55790f1d704fca7db661357d9d899fd3c9d133a92afa56464e8643a56bd8ab22db880a00aa650ab1d079d5ce5474583b06c4432dbaec92aecf87e5e5bd79c1b186637035feea161385a0d4f10000587ccac99b737625acd821bbcfd2c63ec28143f57bc9b02c72ec1f903bd88aa65a8cb1391d4c5e0ecb6d4f8ba29e3be833d0195c6f0b2e4d58d01381021c810df57c284d0c0625e577bf432cd"
+   "sig": "10bc26edd0a671b0c0fe53fafbe3223544a84d640f234dae509cc93121d7a54ef1bdda452e86d0ce11fdbe5c65d176e502ae6697206a770b58eac50625f9c8dd3eeeb4a5b1bd8fc9040f8c7a8543933dabd8a97d5f99b5348532842e28ed56beccae960645bfc123769de3479e6304911bd03aec9ed7da39b53c3f20e838487d493c6bb79875692c293fbaf85b8e90aa1d560d93c90b6c05260fa775aec788a11baea60900b4b2f8dca74e75649f39259486f6bbbe28b159a9967a68be19bb1e92a56c16387cae24eb9ea408d5ee1c1c9a79160e28bdb59b56fde18a687b1daa73ca86e2fa3e36f4e3c0a2a2a454c3aea8d1fba8648caaf8c83463ff9be61945"
   }
  ],
  "signed": {
@@ -32,7 +32,9 @@
       "sanipueblo/law-html",
       "sanipueblo/law-xml-codified",
       "capstone",
-      "branch"
+      "branch",
+      "law/capstone",
+      "law/branch"
      ],
      "terminating": true,
      "threshold": 1
@@ -74,7 +76,7 @@
     }
    ]
   },
-  "expires": "2023-05-02T18:08:21Z",
+  "expires": "2023-05-02T18:19:34Z",
   "spec_version": "1.0.0",
   "targets": {
    "hosts.json": {
@@ -113,6 +115,6 @@
     "length": 0
    }
   },
-  "version": 8
+  "version": 9
  }
 }
