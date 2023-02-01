@@ -31,6 +31,13 @@
                 "serve-prefix":"_xml"
             }
         },
+        "sanipueblo/law-rdf": {
+            "custom": {
+                "type":"rdf",
+                "serve":"historical",
+                "serve-prefix":"_rdf"
+            }
+        },
         "sanipueblo/law-static-assets": {
             "custom": {
                 "type":"static-assets",
