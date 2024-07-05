@@ -34,7 +34,7 @@
         "sanipueblo/law-rdf": {
             "custom": {
                 "type":"rdf",
-                "serve":"historical",
+                "serve":"latest",
                 "serve-prefix":"_rdf"
             }
         },
