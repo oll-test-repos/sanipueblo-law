@@ -2,7 +2,7 @@
  "signatures": [
   {
    "keyid": "ba65808977548012b65ab8229f7b939e2339703cec3686ef816f2480274e7f9b",
-   "sig": "8ab2c5e368c3a312fdab605c1d4eac81d4b4446f2842107b8186b89b09edc92caacbc8e76abe5f924f629108ab04489e52218a5e75a530240b3371af7971a18282bdd41cc86bbba51a0b63a2cac68f1fd7a67b5f8df0d08cd8e68ed3cd74c96afe9322f4cdddc7d0f16e6e5e2cc32e883d5ffc80d876a94a1f815debc51bca27a523d73f08107d490719d3624a4376054b98ee4d11227265577342243748337c9641dc4b0a00e2f5bf309b94831281de93244b4caefba3845db57564cefbd41e3eef3b35784eed2a91efbab3972e29cc8ed84aa7b929b6b027b2d541f6ba4566310e59457bdc90f81596fc83132629825d473656e61aeb333c633bab7dda41c7"
+   "sig": "49d1f67cb22f6c55e8004c3864835a2be8ad69787c4f7f6285899f6ebddf670b44477043f6a0966769406d217806b44ed418e1683a33b9ef97122788039d8a723755c5aafa4bd0b61fb4dfd84642d5bcc62fbe493eb6815754a96d5a0cba2e68087c6964f2fd6d269d6aaebdf053032868af05ad35c1344863c409a776892515863bfaa533b3afb7a58c1932ebd6b96f15e9b294b676e73cee67bd354463bef71f1ae4f2d12dbb44d5c22bc01793978e32c3f2faff2067faba265f0981cd8b23ffe0213d0e94c5c057268a32c8bd049c0276d0f4d1a5b81b167a0f76af7c0e6a84358d24a8d2ad51f7ca6d859cf4dac923dee76b7345d4c0b402541a86d42657"
   }
  ],
  "signed": {
@@ -79,11 +79,8 @@
      ],
      "name": "rdf",
      "paths": [
-      "mohicanlaw/law-rdf",
       "rdf/capstone",
       "rdf/branch",
-      "test1/rdf",
-      "test2/rdf",
       "sanipueblo/law-rdf"
      ],
      "terminating": true,
@@ -91,7 +88,7 @@
     }
    ]
   },
-  "expires": "2024-10-10T19:27:20Z",
+  "expires": "2024-10-20T12:57:46Z",
   "spec_version": "1.0.0",
   "targets": {
    "hosts.json": {
@@ -122,20 +119,6 @@
     },
     "length": 1761
    },
-   "sanipueblo/law-rdf": {
-    "hashes": {
-     "sha256": "a269dc30dc0966a897d08626d63a3facd6414f32a0040194e97721738816f156",
-     "sha512": "fb5391915c4c1290e83ff0076600fdebb91d842724016c660258c05b1078ebf5461c8d2c25dbf4b203f45aee3fab0c83ffc33aa80dc365e01ab395e0bb4b7f66"
-    },
-    "length": 151
-   },
-   "test": {
-    "hashes": {
-     "sha256": "3e12a45efdd97615a63c9da3d1519ec07086ebbdc945569af8a5b0d7949b5718",
-     "sha512": "a273b9b375ac1dfd72c69321ac5f020e427f0e4f7b58b4ec8c01e770d644aa147d65c680fc046ea532c3967373844220156319006e09d939ded8587a7938a9ce"
-    },
-    "length": 5
-   },
    "test-auth-repo": {
     "hashes": {
      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -144,6 +127,6 @@
     "length": 0
    }
   },
-  "version": 181
+  "version": 182
  }
 }
